@@ -3,8 +3,8 @@
 ## 获取终端DUID  
 登录LUCI - 状态 - 概览 - DHCPv6分配 复制终端DUID **此处DUID和终端MAC地址关联**
 ## SHELL操作实例  
-root@OpenWrt:~\# mkdir /etc/ddnsv6  
-root@OpenWrt:~\# cd /etc/ddnsv6  
+root@OpenWrt\:\~\# mkdir /etc/ddnsv6  
+root@OpenWrt\:\~\# cd /etc/ddnsv6  
 上传脚本到/etc/ddnsv6   
 root@OpenWrt:/etc/ddnsv6\# sed -i 's/DUID/HostDUID/' example.com  \#**HostDUID为终端的DUID**   
 root@OpenWrt:/etc/ddnsv6\# chmod +x example.com \#**给予脚本权限**  
